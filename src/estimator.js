@@ -7,4 +7,6 @@ impact: {};
 severeImpact: {};
 
 let currentlyInfected = reportedCases * 10;
-print("the number of currently infected people is " + impact.currentlyInfected);
+print("The number of currently infected people is " + impact.currentlyInfected);
+
+print("there it is");
