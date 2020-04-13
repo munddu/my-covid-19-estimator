@@ -3,12 +3,16 @@ const covid19ImpactEstimator = (data) => data;
 data: {};
 impact: {};
 severeImpact: {};
+//for impact
+var currentlyInfected = reportedCases * 10;
+window.alert(impact.currentlyInfected);
 
-let currentlyInfected = reportedCases * 10;
-print("The number of currently infected people is " + impact.currentlyInfected);
+var infectionsByRequestedTime = currentlyInfected* 512;
 
-print("there it is");
+//For severe impact
+currentlyInfected = reportedCases * 50;
+window.alert(severeImpact.currentlyInfected);
 
+var infectionsByRequestedTime = currentlyInfected * 512;
 export default covid19ImpactEstimator;
-
 
