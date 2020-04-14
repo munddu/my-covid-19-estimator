@@ -22,7 +22,7 @@ console.log(hospitalBedsByRequestedTime);
 
 //challenge 3
 var casesForICUByRequestedTime = 0.05 * infectionsByRequestedTime;
-window.alert(casesForICUByRequestedTime);
+console.log(casesForICUByRequestedTime);
 var casesForVentilatorsByRequestedTime = 0.02 * infectionsByRequestedTime;
 window.alert(casesForVentilatorsByRequestedTime);
 
