@@ -1,18 +1,31 @@
 const covid19ImpactEstimator = (data) => data;
 
-data: {};
+//data: {};
 impact: {};
 severeImpact: {};
 //for impact
 var currentlyInfected = reportedCases * 10;
-window.alert(impact.currentlyInfected);
+console.log(impact.currentlyInfected);
 
 var infectionsByRequestedTime = currentlyInfected* 512;
 
 //For severe impact
-currentlyInfected = reportedCases * 50;
-window.alert(severeImpact.currentlyInfected);
+var currentlyInfected = reportedCases * 50;
+console.log(severeImpact.currentlyInfected);
 
 var infectionsByRequestedTime = currentlyInfected * 512;
-export default covid19ImpactEstimator;
 
+//challenge 2
+var severeCasesByRequestedTime = 0.15 * infectionsByRequestedTime;
+var hospitalBedsByRequestedTime = (0.35 * totalHospitalBeds)/severeCasesByRequestedTime;
+console.log(hospitalBedsByRequestedTime);
+
+//challenge 3
+var casesForICUByRequestedTime = 0.05 * infectionsByRequestedTime;
+window.alert(casesForICUByRequestedTime);
+var casesForVentilatorsByRequestedTime = 0.02 * infectionsByRequestedTime;
+window.alert(casesForVentilatorsByRequestedTime);
+
+var dollarsInFlight = (infectionsByRequestedTime * 0.65 * 1.5) / 30;
+console.log(dollarsInFlight);
+export default covid19ImpactEstimator;
